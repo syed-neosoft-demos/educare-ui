@@ -1,0 +1,44 @@
+.auth-container {
+  background: url("../assets/auth-bg.svg");
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* auth login css start */
+.auth-left {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.auth-left .text-logo {
+  width: 394px;
+  height: 128px;
+}
+.auth-left .quotes {
+  color: white;
+  font-family: Philosopher;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+}
+.auth-left .quotes span {
+  display: block;
+  font-size: 24px;
+  line-height: 28px;
+}
+.auth-left .content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.logo {
+  width: 140.87px;
+  height: 30px;
+}
