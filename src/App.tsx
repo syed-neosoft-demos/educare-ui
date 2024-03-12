@@ -1,5 +1,3 @@
-import "./pages/Auth.css";
-
 import { Navigate, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
