@@ -1,7 +1,7 @@
 import educareLogo from "../assets/educare-logo.svg";
 import educareTxtLogo from "../assets/educare-txt-logo.svg";
 
-const Login = () => {
+const SignUp = () => {
   return (
     <div className="auth-container">
       <div className="auth-left">
@@ -18,21 +18,29 @@ const Login = () => {
       </div>
       <div className="auth-right">
         <div className="auth-form">
-          <h5>Login</h5>
+          <h5>Registration</h5>
           <div className="input">
             <label htmlFor="email">Email</label>
             <input type="text" name="email" id="email" placeholder="Enter email" />
+          </div>
+          <div className="input">
+            <label htmlFor="email">Contact Number</label>
+            <input type="text" name="email" id="email" placeholder="Enter contact number" />
           </div>
           <div className="input">
             <label htmlFor="email">Password</label>
             <input type="text" name="email" id="email" placeholder="Enter password" />
           </div>
           <div className="input">
-            <input type="button" value="Log In" />
+            <label htmlFor="email">Confirm Password</label>
+            <input type="text" name="email" id="email" placeholder="Enter confirm password" />
+          </div>
+          <div className="input">
+            <input type="button" value="Register Now" />
           </div>
         </div>
       </div>
     </div>
   );
 };
-export default Login;
+export default SignUp;
