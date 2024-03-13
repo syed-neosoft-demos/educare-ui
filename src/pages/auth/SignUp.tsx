@@ -1,4 +1,5 @@
-import AuthLayout from "../components/auth/Layout";
+import { Link, useNavigate } from "react-router-dom";
+import AuthLayout from "../../components/auth/Layout";
 
 const SignUp = () => {
   return (
@@ -20,6 +21,12 @@ const SignUp = () => {
         <div className="input">
           <label htmlFor="email">Confirm Password</label>
           <input type="text" name="email" id="email" placeholder="Enter confirm password" />
+        </div>
+        <div className="privacy-container">
+          <div className="privacy">
+            <input type="checkbox" name="check" id="" />I agree to
+            <Link to="auth/forget"> Terms & Conditions</Link>
+          </div>
         </div>
         <div className="input">
           <input type="button" value="Register Now" />
