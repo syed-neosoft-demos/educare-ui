@@ -1,11 +1,16 @@
 import { Link, useNavigate } from "react-router-dom";
+import back from "../../assets/auth/back-icon.svg";
 import AuthLayout from "../../components/auth/Layout";
 
 const SignUp = () => {
+  const navigate = useNavigate();
   return (
     <AuthLayout>
       <div className="auth-form">
-        <h5>Registration</h5>
+        <span role="button" onClick={() => navigate("/auth/login")}>
+          <img src={back} alt="" srcSet={back} />
+          <h5>Registration</h5>
+        </span>
         <div className="input">
           <label htmlFor="email">Email</label>
           <input type="text" name="email" id="email" placeholder="Enter email" />
