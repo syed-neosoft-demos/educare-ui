@@ -5,6 +5,8 @@ import Otp from "./pages/auth/Otp";
 import Reset from "./pages/auth/Reset";
 import SignUp from "./pages/auth/SignUp";
 
+import Home from "./pages/panel/Home";
+
 export default function App() {
   return (
     <Routes>
@@ -13,6 +15,9 @@ export default function App() {
       <Route path="/auth/forget" element={<Forget />} />
       <Route path="/auth/reset" element={<Reset />} />
       <Route path="/auth/otp" element={<Otp />} />
+
+      <Route path="/panel/home" element={<Home />} />
+
       <Route path="*" element={<Navigate to="/auth/login" />} />
     </Routes>
   );
