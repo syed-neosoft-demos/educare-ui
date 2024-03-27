@@ -1,0 +1,14 @@
+.panel-container {
+  background: url("../../assets/auth-bg.svg");
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+}
+
+.panel-container .sidebar {
+  flex: 0 0 200px;
+  background: linear-gradient(180deg, #ffffff 36.52%, #36b0c9 73.1%, #003f84 100%);
+}
